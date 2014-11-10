@@ -20,7 +20,6 @@
         android:layout_alignParentLeft="true"
         android:layout_marginTop="14dp"
         android:layout_alignLeft="@+id/lvItems"
-        android:layout_below="@+id/lvItems"
         android:ems="10"
         android:hint="@string/text_newItem" >
 
