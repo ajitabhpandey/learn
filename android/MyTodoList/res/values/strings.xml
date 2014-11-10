@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My Todo List</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="text_newItem">Enter New Item</string>
+    <string name="label_addItem">Add Item</string>
+
+</resources>
