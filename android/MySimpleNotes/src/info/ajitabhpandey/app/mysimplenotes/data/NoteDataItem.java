@@ -41,4 +41,9 @@ public class NoteDataItem {
 		
 		return notedataitem;
 	}
+	
+	@Override
+	public String toString() {
+		return this.getDataItemValue();
+	}
 }

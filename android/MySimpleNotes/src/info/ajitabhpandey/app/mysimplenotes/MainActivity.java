@@ -6,14 +6,17 @@ import info.ajitabhpandey.app.mysimplenotes.data.NoteDataItem;
 import info.ajitabhpandey.app.mysimplenotes.data.NoteDataSource;
 import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 
 public class MainActivity extends Activity {
 	
 	private NoteDataSource datasource;
+	List<NoteDataItem> noteList;
+	ListView lvNotesList;
 	
 
     @Override
@@ -22,20 +25,22 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         
         datasource = new NoteDataSource(this);
-        List<NoteDataItem> notes = datasource.findAll();
-        NoteDataItem note = notes.get(0);
-        note.setDataItemValue("Updated");
         
-        datasource.updateNote(note);
-        
-        notes.get(0);
-        
-        Log.i("NOTES", note.getDataItemKey() + ": " + note.getDataItemValue());
+        refreshDisplay();
 
     }
 
+    private void refreshDisplay() {
+    	lvNotesList = (ListView) findViewById(R.id.lvNotesList);
+    	
+		noteList = datasource.findAll();
+		ArrayAdapter<NoteDataItem> adapter = 
+				new ArrayAdapter<NoteDataItem>(this, R.layout.note_list_view_layout, noteList);
+		lvNotesList.setAdapter(adapter);
+		
+	}
 
-    @Override
+	@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
