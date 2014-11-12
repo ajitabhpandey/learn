@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">MySimpleNotes</string>
-    <string name="hello_world">Hello world! from Notes</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_create">Create</string>
+    <string name="lbl_edit_note_hint">Enter some text</string>
 
 </resources>
