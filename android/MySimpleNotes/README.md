@@ -10,4 +10,4 @@ Scope -
 
 Video Walkthrough - 
 =================
-![Video Walkthrough](My Simple Note Walkthrough.gif)
+![Video Walkthrough](My Simple Notes Walkthrough.gif)
