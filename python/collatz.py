@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+import sys
+
 def collatz(number):
   if number % 2 == 0:
     num_floor =  number // 2
@@ -12,10 +14,15 @@ def collatz(number):
   else:
     print "Number is neither even nor odd, what is it?"
 
-print "Enter a number: "
-number = input();
+num = raw_input("Enter a number: ");
 
-ret_val = collatz(number)
+try:
+  int_number = int(num)
+except ValueError:
+  print "You must type an integer"
+  sys.exit()
+
+ret_val = collatz(int_number)
 
 while True:
   if ret_val == 1:
