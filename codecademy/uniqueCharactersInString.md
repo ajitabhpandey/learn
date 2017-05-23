@@ -1,9 +1,10 @@
-#[Challenge] Unique Characters In A String
+# [Challenge] Unique Characters In A String
+***
 [Unique Characters In A String](https://discuss.codecademy.com/t/challenge-unique-characters-in-a-string/82151) 
-
+***
 Write a function that determines if any given string has all unique characters (i.e. no character in the string is duplicated). If the string has all unique characters, print "all unique". If the string does not have all unique characters, print "duplicates found."
-
-##Solution 1 - Using regular expressions
+***
+## Solution 1 - Using regular expressions
 
 In perl the logic goes as follows -
 
