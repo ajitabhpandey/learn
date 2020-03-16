@@ -10,7 +10,6 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 1%;
-    
 }
 
 h1, h2 {
@@ -80,6 +79,48 @@ section {
     background-color: #ffffff;
 }
 
+table {
+    font-family: sans-serif, Helvetica, Arial, "Times New Roman";
+    font-weight: normal;
+    font-size: 110%;
+    line-height: 110%;
+    width: 80%;
+    margin: 0 auto;
+}
 
+tr {
+    opacity: 0.8;
+    text-align: center;
+}
+
+tr:hover tr:first-child {
+    opacity: 1;
+}
+
+th {
+    background-color: #54680c;
+    padding: 5px;
+    text-align: center;
+    color: #ffffff;
+    border-color: #54680c;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-width: thick;
+    border-bottom-style: solid;
+    border-bottom-color: #54680c;
+    background-image: linear-gradient(#54680c, #b2e63b);
+}
+
+td:first-child {
+    text-align: left;
+}
+
+td {
+    border-radius: 2px;
+    background-color: #ceeb8b;
+    padding: 5px;
+    color: #0c0404;
+    text-shadow: 2px 2px 8px #1f0e0e;
+}
 
 
